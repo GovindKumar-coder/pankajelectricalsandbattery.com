@@ -1,107 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pankaj Electricals</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">   
-    <link rel="stylesheet" href="style.css">
+    
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pankaj Electricals</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-
-<section id="header">
+  <!-- Header -->
+  <section id="header">
     <video class="logo" autoplay loop muted style="position: absolute; top: 10px; left: 10px; width: 200px; height: auto;">
-        <source src="img/logo.mp4" type="video/mp4">
-        Your browser does not support the video tag.
+      <source src="img/logo.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
     </video>
 
     <div>
-        <ul id="navbar">
-            <li><a class="active" href="index.html">Home</a></li>
-            <li><a href="about.html">About us</a></li>
-            <li><a href="brands.html">Brands</a></li>
-            <li><a href="services.html">Services</a></li>
-            
-            <!-- Search Bar -->
-            <li>
-                <input type="text" placeholder="Search..." id="search-box">
-                <i class="fa fa-search"></i>
-            </li>
-            
-            <li><a href="cart.html"><i class="fa fa-shopping-cart fa-lg"></i></a></li>
-        </ul>
-    </div> 
+      <ul id="navbar">
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="brands.html">Brands</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li>
+          <input type="text" placeholder="Search..." id="search-box" />
+          <i class="fa fa-search"></i>
+        </li>
+        <li>
+          <a href="cart.html" aria-label="View shopping cart">
+            <i class="fa fa-shopping-cart fa-lg"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <img src="img/Hero.png" class="hero-slide active" alt="Hero banner 1 showing featured product" />
+    <img src="img/Hero 2.png" class="hero-slide" alt="Hero banner 2 showing featured product" />
+    <img src="img/Hero 3.png" class="hero-slide" alt="Hero banner 3 showing featured product" />
+    <img src="img/Hero 4.png" class="hero-slide" alt="Hero banner 4 showing featured product" />
+    <button id="shopBtn">Shop Now</button>
+  </section>
+
+  <!-- Feature Section -->
+  <section id="feature" class="section-p1">
+    <div class="fe-box">
+      <img src="img/Features/Online order.png" alt="Online order feature icon" />
+      <h6>Online Order</h6>
+    </div>
+    <div class="fe-box">
+      <img src="img/Features/Free Shipping.png" alt="Free shipping feature icon" />
+      <h6>Free Shipping</h6>
+    </div>
+    <div class="fe-box">
+      <img src="img/Features/Promotions..png" alt="Promotions feature icon" />
+      <h6>Promotions</h6>
+    </div>
+    <div class="fe-box">
+      <img src="img/Features/Save Money.png" alt="Save money feature icon" />
+      <h6>Save Money</h6>
+    </div>
+    <div class="fe-box">
+      <img src="img/Features/Happy Sell.png" alt="Happy selling feature icon" />
+      <h6>Happy Sell</h6>
+    </div>
+    <div class="fe-box">
+      <img src="img/Features/Expert Electrician Service.png" alt="Expert electrician service icon" />
+      <h6>Electrician Service</h6>
+    </div>
+    <div class="fe-box">
+      <img src="img/Features/Support.png" alt="24/7 customer support icon" />
+      <h6>24/7 Support</h6>
+    </div>
+  </section>
+
+  <!-- Brands Section -->
+<section id="Brands" class="section-p1">
+  <h2>Our Partner Brands</h2>
+  <p>We proudly offer products from trusted and top-tier electrical brands</p>
+  <div class="brand-container">
+    <img src="img/Brands.png" alt="Brands we carry" />
+  </div>
 </section>
 
-<section id="hero">
-  <img src="img/Hero.png" class="hero-slide active">
-  <img src="img/Hero 2.png" class="hero-slide">
-  <img src="img/Hero 3.png" class="hero-slide">
-  <img src="img/Hero 4.png" class="hero-slide">
-  <button id="shopBtn">Shop Now</button>
-</section>
-
-<section id="feature" class="section-p1">
-    <div class="fe-box">
-        <img src="img/Features/Online order.png" alt="">
-        <h6>Online Order</h6>
-    </div>
-    <div class="fe-box">
-        <img src="img/Features/Free Shipping.png" alt="">
-        <h6>Free Shipping</h6>
-    </div>
-    <div class="fe-box">
-        <img src="img/Features/Promotions..png" alt="">
-        <h6>Promotions</h6>
-    </div>
-    <div class="fe-box">
-        <img src="img/Features/Save Money.png" alt="">
-        <h6>Save Money</h6>
-    </div>
-    <div class="fe-box">
-        <img src="img/Features/Happy Sell.png" alt="">
-        <h6>Happy Sell</h6>
-    </div>
-    <div class="fe-box">
-        <img src="img/Features/Support.png" alt="">
-        <h6>24/7 Support</h6>
-    </div>
-</section>
-
-<section id="product 1" class="section-p1">
+  <!-- Product Section -->
+  <section id="product1" class="section-p1">
     <h2>Trending Products</h2>
     <p>Most selling items with expert services at your door step</p>
     <div class="pro-container">
-        <div class="pro">
-            
+      <div class="pro">
+        <img src="img/Products/luminous-home-inverter.jpg" alt="Luminous home inverter and battery" />
+        <div class="des">
+          <span>Luminous</span>
+          <h5>Luminous Battery & Inverter</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <a href="product-details.html" class="know-more">Know More</a>
         </div>
+        <button class="cart" aria-label="Add to cart">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="24" height="24" fill="#088178">
+            <path d="M528.12 301.319l47.273-208A16 16 0 0 0 560 64H128l-9.4-44.5A16 16 0 0 0 103 16H16A16 16 0 0 0 0 32v16a16 16 0 0 0 16 16h66.1l61.6 291.4a63.94 63.94 0 1 0 76.2 9.6h198.4a63.94 63.94 0 1 0 71.8-10.2l5.5-24.9H192l-7.2-32h339.2a16 16 0 0 0 15.92-13.881zM192 416a32 32 0 1 1-32-32 32 32 0 0 1 32 32zm288 0a32 32 0 1 1-32-32 32 32 0 0 1 32 32z"/>
+          </svg>
+        </button>
+      </div>
     </div>
-</section>
+  </section>
 
 
-<script src="script.js"></script>
+
+
+
+
+
+
+  <script src="script.js"></script>
 </body>
 </html>
- 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   

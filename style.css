@@ -115,6 +115,11 @@ body {
     transform: translateY(-50%);
     color: #1a1a1a;
     cursor: pointer;
+    right: 30px; /* or play with 25px, 28px, etc. */
+}
+
+#navbar li:last-child {
+  margin-left: 30px; /* Adjust this value as needed */
 }
 
 #navbar li a:hover,
@@ -222,7 +227,7 @@ html, body {
 
 #feature {
     display: flex;
-    gap: 60px; /* Adjust the value as needed */
+    gap: 20px; /* Adjust the value as needed */
 }
 
 
@@ -293,4 +298,109 @@ html, body {
     background-color: #fff2e5;
 }
 
+#feature .fe-box:nth-child(7) h6 {
+    background-color: #E3E6F3;
+}
+
+/* Brands Section Styling */
+#Brands {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.brand-container {
+  width: 100%;
+  height: 70vh; /* Full screen height */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eaf6fb; /* optional */
+}
+
+.brand-container img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.know-more {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.know-more:hover {
+    background-color: #0056b3;
+}
+
+#product1 {
+    text-align: center;
+}
+
+#product1 .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid  #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px  rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px  rgba(0, 0, 0, 0.06);
+}
+
+#product1 .pro img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+#product1 .pro  .des{
+    text-align: start;
+    padding: 10px 0;
+}
+
+#product1 .pro  .des span{
+    color: #606063;
+    font-size: 12px;   
+}
+
+#product1 .pro  .des h5{
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+
+#product1 .pro  .des i{
+    font-size: 12px;
+    color: rgba(243, 181, 25); 
+}
+
+.cart {
+  width: 40px;
+  height: 40px;
+  background-color: #e8f6e8;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #cce7d0;
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
 

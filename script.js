@@ -1,18 +1,29 @@
 
-document.addEventListener("DOMContentLoaded", function() {
-    console.log("Website loaded successfully!");
-});
-
-function learnMore() {
-    alert("Explore our services and products!");
-}
-
-document.querySelector(".fa-search").addEventListener("click", function() {
-    let searchQuery = document.querySelector("#search-box").value;
-    alert("Searching for: " + searchQuery);
-});
-
 document.addEventListener("DOMContentLoaded", function () {
+    console.log("Website loaded successfully!");
+
+    
+    // Learn More button (if used elsewhere)
+    window.learnMore = function () {
+        alert("Explore our services and products!");
+    };
+
+    // Search functionality
+    const searchIcon = document.querySelector(".fa-search");
+    const searchBox = document.querySelector("#search-box");
+
+    if (searchIcon && searchBox) {
+        searchIcon.addEventListener("click", function () {
+            const query = searchBox.value.trim();
+            if (query) {
+                alert("Searching for: " + query);
+            } else {
+                alert("Please enter a search term.");
+            }
+        });
+    }
+
+    // Hero slider
     const slides = document.querySelectorAll(".hero-slide");
     const button = document.getElementById("shopBtn");
     let index = 0;
@@ -22,9 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
             slide.classList.remove("active");
             if (idx === i) slide.classList.add("active");
         });
-
-        // Show button only on first slide
-        button.style.display = i === 0 ? "block" : "none";
+        if (button) button.style.display = i === 0 ? "block" : "none";
     }
 
     showSlide(index);
@@ -34,6 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
         showSlide(index);
     }, 4000);
 });
+
 
 
 
